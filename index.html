@@ -1,1 +1,50 @@
-<h1> teste </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>GoApp_PWA A-Frame entries</title>
+	<meta name="description" content="A list of A-Frame entries submitted to the GoApp_PWA 2017 competition, used as an example for the MDN articles about Progressive Web Apps.">
+	<meta name="author" content="end3r">
+	<meta name="theme-color" content="#B12A34">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="icons/icon-512.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="goapp_pwa.webmanifest">
+	<script src="data/games.js" defer></script>
+	<script src="app.js" defer></script>
+	<script type="text/javascript">
+	// Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+    (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+    }(window.location))
+</script>
+</head>
+<body>
+<header>
+	<p><a class="logo" href="http://GoApp_PWA.com"><img src="img/GoApp_PWA.png" alt="GoApp_PWA"></a></p>
+</header>
+<main>
+	<h1>GoApp_PWA A-Frame entries</h1>
+	<p class="description">List of games submitted to the <a href="http://GoApp_PWA.com/aframe">A-Frame category</a> in the <a href="http://2017.GoApp_PWA.com">GoApp_PWA 2017</a> competition. You can <a href="https://github.com/mdn/pwa-examples/blob/master/js13kpwa">fork js13kPWA on GitHub</a> to check its source code.</p>
+	<button id="notifications">Request dummy notifications</button>
+	<section id="content"></section>
+</main>
+<footer>
+	<p>&copy; GoApp_PWA 2018-2020, created and maintained by <a href="http://end3r.com">Andrzej Mazur</a> from <a href="http://enclavegames.com">Enclave Games</a>.</p>
+</footer>
+</body>
+</html>
