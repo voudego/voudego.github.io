@@ -1,26 +1,26 @@
 self.importScripts('data/games.js');
 
 // Files to cache
-var cacheName = 'operacional_pwa-v1';
+var cacheName = 'goapp_pwa-v1';
 var appShellFiles = [
-  '/operacional/',
-  '/operacional/index.html',
-  '/operacional/app.js',
-  '/operacional/style.css',
-  '/operacional/fonts/graduate.eot',
-  '/operacional/fonts/graduate.ttf',
-  '/operacional/fonts/graduate.woff',
-  '/operacional/favicon.ico',
-  '/operacional/img/js13kgames.png',
-  '/operacional/img/bg.png',
-  '/operacional/icons/icon-32.png',
-  '/operacional/icons/icon-64.png',
-  '/operacional/icons/icon-96.png',
-  '/operacional/icons/icon-128.png',
-  '/operacional/icons/icon-168.png',
-  '/operacional/icons/icon-192.png',
-  '/operacional/icons/icon-256.png',
-  '/operacional/icons/icon-512.png'
+  '/',
+  '/index.html',
+  '/app.js',
+  '/style.css',
+  '/fonts/graduate.eot',
+  '/fonts/graduate.ttf',
+  '/fonts/graduate.woff',
+  '/favicon.ico',
+  '/img/js13kgames.png',
+  '/img/bg.png',
+  '/icons/icon-32.png',
+  '/icons/icon-64.png',
+  '/icons/icon-96.png',
+  '/icons/icon-128.png',
+  '/icons/icon-168.png',
+  '/icons/icon-192.png',
+  '/icons/icon-256.png',
+  '/icons/icon-512.png'
 ];
 var gamesImages = [];
 for(var i=0; i<games.length; i++) {
